@@ -8,15 +8,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="wrapper">
-            <form>
-                
-            </form>
+    <main>        
+        <div class="side-hero">            
+            <div class="logo-overlay">
+                <img src="./images/odin-lined.png" alt="The Odin Project Logo">
+               <h2 class="logo-text">J Ramm</h2>
+            </div>
+            <div class="left-section-footer">
+                <p class="image-credits">Photo by <a href="https://unsplash.com/@eberhardgross">eberhardgross</a> on <a href="https://unsplash.com/">Unsplash</a> </p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-header">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up </p>
+                <p>You <i>know</i> you want to!</p>
+            </div>
+            <div class="input-section">
+                <p class="form-text">Let's do this!</p>
+                <form id="sign-up-form" action="#" method="get">
+                    <label for="first_name">
+                        First Name: 
+                        <input type="text" id="first_name" name="first_name" required>
+                        <span id="first-name-error" class="error"></span>
+                    </label>
+                    <label for="last_name">
+                        Last Name:
+                        <input type="text" name="last_name" id="last_name" required>
+                        <span id="last-name-error" class="error"></span>
+                    </label>
+                    <label for="email">
+                        Email: 
+                        <input type="email" name="email" id="email" required>
+                        <span id="email-error" class="error"></span>
+                    </label>
+                    <label for="phone_num">
+                        Phone Number: 
+                        <input type="tel" name="phone_num" id="phone_num" required>
+                        <span id="phone-num-error" class="error"></span>
+                    </label>
+                    <label for="password">
+                        Password: 
+                        <input type="password" name="password" id="password" required>
+                        <span id="password-error" class="error"></span>
+                    </label>
+                    <label for="confirm_password">
+                        Confirm Password: 
+                        <input type="password" name="confirm_password" id="confirm_password">
+                        <span id="confirm-password-error" class="error"></span>
+                    </label>
+                    <button class="btn" id="submit-btn" type="submit">Create Account</button>
+                    <button class="btn" id="reset-btn" type="reset">Reset</button>
+                </form>
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" target="_blank" rel="noopener noreferrer">Log in</a></p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-
+        <p>
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            J Ramm
+        </p>
+        <a href="https://github.com/Jramm91">GitHub</a>
     </footer>
 </body>
 </html>
