@@ -9,11 +9,12 @@
 
 @font-face {
     font-family: Norse;
-    src: url(./Norse-Bold.otf);
+    src: url(./Fonts/Norse-Bold.otf);
 }
 
+
 :root{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Tilt Neon', cursive;    
     --credit-text-color: #cac6b1;
     --link-color: #76cde2;
 }
@@ -28,7 +29,7 @@ body{
 }
 
 main {
-    height: 100%;
+    height: 75%;
     display: flex;
     align-items: center;
     max-width: 90%;
@@ -84,48 +85,27 @@ main {
 .form-header>p {
     padding: 1.2rem;
     font-size: 1.2em;
+    width: 75%;
+    margin-left: 1.7rem;
 }
 
-.input-section {
-    display: flex;
-    flex-direction: column;
+form {
+    padding-left: 2.5vw;
+    padding-top: 1.2vh;
     background: #ffffff;
-    padding: 1rem;
-    width: 100%;
 }
 
-.input-section .form-text {
+form .form-text {
     padding-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 32px;
     font-weight: bolder;
 }
 
-.input-section form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 2vh;
+form .row{
+    padding-bottom: 2vh;
 }
 
-.input-section form input {
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
-    width: min(12rem, 90%);
-    padding: 1.2vh;
-    border-radius: 5px;
-}
 
-.input-section form input:valid {
-    border-color: #45c968;
-}
-
-.input-section form input:invalid {
-    border-color: #c94545;
-}
-
-.input-section form input:focus {
-    
-}
 
 .btn {
     display: flex;
@@ -134,7 +114,6 @@ main {
     width: min(12rem, 90%);
     height: calc(2.5rem - 1vh);
     border-radius: 5px;
-    margin-bottom: 4vh;
 }
 
 .btn:hover {
