@@ -11,8 +11,11 @@
     font-family: Norse;
     src: url(./Norse-Bold.otf);
 }
+
 :root{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --credit-text-color: #cac6b1;
+    --link-color: #76cde2;
 }
 
 body{
@@ -21,6 +24,7 @@ body{
     align-items: center;
     justify-content: center;
     color: #333;
+    line-height: calc(1.1em + 0.5vw);
 }
 
 main {
@@ -38,10 +42,14 @@ main {
     background-size: cover;
     height: 100%;
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo-overlay {
-    margin-top: 30%;
+    margin-top: calc(20vh - 2rem);
     background: rgba(0, 0, 0, .404);
     height: 20%;
     padding: 1rem;
@@ -51,8 +59,98 @@ main {
     color: white;
     font-size: 3rem;
     font-family: Norse;
+    width: 100%;
 }
 
 .logo-overlay img {
     max-height: 100%;
+}
+
+.left-section-footer p {
+    color: var(--credit-text-color);
+    font-size: calc(3px + 1vw);
+    
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    background: #e4e4e4;
+
+}
+
+.form-header>p {
+    padding: 1.2rem;
+    font-size: 1.2em;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 1rem;
+    width: 100%;
+}
+
+.input-section .form-text {
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.input-section form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2vh;
+}
+
+.input-section form input {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: min(12rem, 90%);
+    padding: 1.2vh;
+    border-radius: 5px;
+}
+
+.input-section form input:valid {
+    border-color: #45c968;
+}
+
+.input-section form input:invalid {
+    border-color: #c94545;
+}
+
+.input-section form input:focus {
+    
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(12rem, 90%);
+    height: calc(2.5rem - 1vh);
+    border-radius: 5px;
+    margin-bottom: 4vh;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#submit-btn {
+    background-color: #45c968;
+}
+
+#reset-btn {
+    background-color: #76cde2;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--link-color)
 }
