@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <main>        
@@ -25,40 +32,53 @@
                 <p>You <i>know</i> you want to!</p>
             </div>
             <div class="input-section">
-                <p class="form-text">Let's do this!</p>
-                <form id="sign-up-form" action="#" method="get">
-                    <label for="first_name">
-                        First Name: 
-                        <input type="text" id="first_name" name="first_name" placeholder="John" required>
-                        <span id="first-name-error" class="error"></span>
-                    </label>
-                    <label for="last_name">
-                        Last Name:
-                        <input type="text" name="last_name" id="last_name" placeholder="Smith" required>
-                        <span id="last-name-error" class="error"></span>
-                    </label>
-                    <label for="email">
-                        Email: 
-                        <input type="email" name="email" id="email" placeholder="email@example.com" required>
-                        <span id="email-error" class="error"></span>
-                    </label>
-                    <label for="phone_num">
-                        Phone Number: 
-                        <input type="tel" name="phone_num" id="phone_num" placeholder="(555) 555-5555" required>
-                        <span id="phone-num-error" class="error"></span>
-                    </label>
-                    <label for="password">
-                        Password: 
-                        <input type="password" name="password" id="password" required>
-                        <span id="password-error" class="error"></span>
-                    </label>
-                    <label for="confirm_password">
-                        Confirm Password: 
-                        <input type="password" name="confirm_password" id="confirm_password">
-                        <span id="confirm-password-error" class="error"></span>
-                    </label>
-                    <button class="btn" id="submit-btn" type="submit">Create Account</button>
-                    <button class="btn" id="reset-btn" type="reset">Reset</button>
+                <form action="#" method="get">
+                    <p class="form-text">Let's do this!</p>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" name="first_name" placeholder="First Name: *" aria-label="First Name" required>
+                                <label for="floatingInputGrid">First Name: *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" name="last_name" placeholder="Last Name: *" aria-label="Last Name" required>
+                                <label for="floatingInputGrid">Last Name: *</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInputGrid" name="email" placeholder="Email: *" aria-label="Email" required>
+                                <label for="floatingInputGrid">Email: *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="floatingInputGrid" name="phone_number" placeholder="Phone Number: *" aria-label="Phone Number" pattern="^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required>
+                                <label for="floatingInputGrid">Phone Number: *</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingInputGrid" name="password" placeholder="Password: *" required>
+                                <label for="floatingInputGrid">Password: *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="password" name="confrim_password" id="floatingInputGrid" class="form-control" placeholder="Confirm Password: *" required>
+                                <label for="floatingInputGrid">Confirm Password: *</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </div>
                 </form>
                 <div class="form-footer">
                     <p>Already have an account? <a href="#" target="_blank" rel="noopener noreferrer">Log in</a></p>
