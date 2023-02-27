@@ -93,43 +93,38 @@ form {
     padding-left: 2.5vw;
     padding-top: 1.2vh;
     background: #ffffff;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 form .form-text {
-    padding-bottom: 20px;
     font-size: 32px;
     font-weight: bolder;
 }
 
 form .row{
-    padding-bottom: 2vh;
+    padding-bottom: 1.5vh;
 }
-
-
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: min(12rem, 90%);
-    height: calc(2.5rem - 1vh);
-    border-radius: 5px;
+    position: relative;
+    top: 4.5vh;
+    background: #76cde2;
+
 }
 
-.btn:hover {
-    cursor: pointer;
+.form-footer {
+    padding-top: 15%;
+    font-size: 20px;
 }
-
-#submit-btn {
-    background-color: #45c968;
-}
-
-#reset-btn {
-    background-color: #76cde2;
-}
-
 
 a {
     text-decoration: none;
     color: var(--link-color)
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
